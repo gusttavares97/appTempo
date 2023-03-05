@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: 'poppins';
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#f7f7f7;
+}
+input{
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 100%;
+}
+button{
+    display:flex;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.lupa{
+    font-size: 40px;
+    
+}
+
+.content{
+    margin-top: 10px;
+    justify-content: space-between;
+    word-break: break-word;
+}
