@@ -4,28 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>app time</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- fonte -->
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Roboto:wght@400;500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<title>Clima Agora!!</title>
 </head>
 <body>
-    <main>
-        <header>
-            <input type="text">
-            <button><img class="lupa" src='./img/lupa.png'> </button>
-        </header>
-        <div class="content" style="display: none;">
-        <section>
-            <h2 id="place"></h2>
-              <span id="degrees"></span>
-          <br />
-          <span id="wind"></span>
-            </section>
-            <img class="img" src="" alt="clima">
+    <div class="container">
+        <div class="form">
+            <h3>Confira o clima de uma cidade:</h3>
+             <div class="form-input-container">
+                <input type="text" placeholder="digite o nome da cidade" id="cuty-input">
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+             </div>
         </div>
-        </main>
-    </main>
-    
-
-    <script src="script.js"></script>
+        <div id="weather-data">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                 <span id="city"></span>
+                 <img src=" " id="country">
+            </h2>
+            <p id="temperature"><span></span>&deg;C</p>
+            <div id="description-container">
+                <p id="description">Nublado</p>
+              <img src=" " alt="condiçoes climatica" id="weather-icon">
+            </div>
+            <div id="details-container">
+                <p id="umidity">
+                    <i class="fa-solid fa-droplet"></i> 
+                    <span>48%</span>
+                </p>
+                <p id="wind">
+                    <i class="fa-solid fa-wind"></i> 
+                    <span>3km/h</span>
+                </p>
+            </div>
+        </div>
+    </div>
+   
+    <script src="./js/script.js"></script>
 </body>
 </html>
