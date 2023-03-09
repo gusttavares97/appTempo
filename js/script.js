@@ -12,6 +12,7 @@ const weatherIconElement = document.querySelector('#weather-icon');
 const humidityElement = document.querySelector('#humidity span');
 const windElement = document.querySelector('#wind');
 
+const weatherConteiner = document.querySelector("#weather-data")
 
 const getWeatherData = async (city)=>{
     const apiWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`
@@ -32,6 +33,8 @@ const shoeWeatherData = async (city)=>{
     weatherIconElement.setAttribute('src',`https://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
     humidityElement.innerText = `${data.main.humidity}%`
     windElement.innerText = `${data.wind.speed}km/h`
+
+    weatherConteiner.classList.remove("hide")
 }
 
 
@@ -44,3 +47,12 @@ shoeWeatherData(city)
 
     
 })
+
+cityInput.addEventListener("keyup", (e) =>{
+    
+    if(e.code === "Enter"){
+    const city = e.target.value
+
+    shoeWeatherData(city)
+    }
+});
