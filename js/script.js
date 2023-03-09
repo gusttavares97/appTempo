@@ -56,3 +56,4 @@ cityInput.addEventListener("keyup", (e) =>{
     shoeWeatherData(city)
     }
 });
+
