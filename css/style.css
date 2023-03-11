@@ -97,3 +97,12 @@ body{
     padding: .6rem;
 
 }
+
+.erro{
+    display: none;
+}
+
+.erro.js{
+   display: block;
+   color:red;
+}

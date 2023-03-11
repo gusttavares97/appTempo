@@ -12,15 +12,21 @@ const weatherIconElement = document.querySelector('#weather-icon');
 const humidityElement = document.querySelector('#humidity span');
 const windElement = document.querySelector('#wind');
 
-const weatherConteiner = document.querySelector("#weather-data")
+
+const weatherConteiner = document.querySelector("#weather-data");
+
+//fata trata o erro \\
+
 
 const getWeatherData = async (city)=>{
     const apiWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`
 
     const res = await fetch(apiWeatherUrl)
+  
     const data = await res.json()
-
-     return data
+  
+    
+    return data
 
 }
 
