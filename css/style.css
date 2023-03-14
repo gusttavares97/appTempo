@@ -5,7 +5,10 @@
 }
 
 body{
-    background:  linear-gradient(180deg,#594cee 0%, #8dd0f5 100%);
+    /*background:  linear-gradient(180deg,#594cee 0%, #8dd0f5 100%);*/
+    background-image: url('../imgcity.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;

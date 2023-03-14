@@ -15,7 +15,7 @@ const windElement = document.querySelector('#wind');
 
 const weatherConteiner = document.querySelector("#weather-data");
 
-//fata trata o erro \\
+//falta trata o erro \\
 
 
 const getWeatherData = async (city)=>{
