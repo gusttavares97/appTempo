@@ -102,10 +102,11 @@ body{
 }
 
 .erro{
+    margin: 20px;
     display: none;
 }
 
 .erro.js{
    display: block;
-   color:red;
+   color:rgb(252, 27, 27);
 }
