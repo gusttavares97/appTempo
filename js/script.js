@@ -22,6 +22,17 @@ const getWeatherData = async (city)=>{
     const apiWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`
 
     const res = await fetch(apiWeatherUrl)
+    .then(response => {
+        if (!response.ok) {
+          throw new Error('HTTP error ' + response.status);
+        }
+        return response.json();
+      })
+      .then(data => {
+      })
+      .catch(error => {
+        window.alert('algo deu errado');
+      });
   
     const data = await res.json()
   
